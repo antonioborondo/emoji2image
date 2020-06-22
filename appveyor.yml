@@ -8,17 +8,13 @@ install:
     - cmd: choco install conan
     - cmd: refreshenv
 
-configuration:
-    - Release
-    - Debug
-
 matrix:
     fast_finish: true
 
 build_script:
     - cmd: mkdir build && cd build
     - cmd: cmake -G "Visual Studio 16 2019" ..
-    - cmd: cmake --build .
+    - cmd: cmake --build . --config Release
 
 test_script:
-    - cmd: "%CONFIGURATION%\emoji2image.exe"
+    - cmd: Release\emoji2image.exe
