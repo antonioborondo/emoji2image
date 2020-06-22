@@ -17,7 +17,7 @@ matrix:
 
 build_script:
     - cmd: mkdir build && cd build
-    - cmd: cmake -G "Visual Studio 16 2019" -A x64 ..
+    - cmd: cmake -G "Visual Studio 16 2019" ..
     - cmd: cmake --build .
 
 test_script:
