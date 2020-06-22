@@ -8,6 +8,9 @@ install:
     - cmd: choco install conan
     - cmd: refreshenv
 
+platform:
+    - x64
+
 configuration:
     - Debug
     - Release
@@ -17,7 +20,7 @@ matrix:
 
 build_script:
     - cmd: mkdir build && cd build
-    - cmd: cmake -G "Visual Studio 16 2019" -A x64 ..
+    - cmd: cmake ..
     - cmd: cmake --build .
 
 test_script:
