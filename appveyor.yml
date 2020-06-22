@@ -17,8 +17,8 @@ matrix:
 
 build_script:
     - cmd: mkdir build && cd build
-    - cmd: cmake ..
+    - cmd: cmake -G "Visual Studio 16 2019" -A x64 ..
     - cmd: cmake --build .
 
 test_script:
-    - cmd: '%CONFIGURATION%\emoji2image.exe'
+    - cmd: "%CONFIGURATION%\emoji2image.exe"
