@@ -20,9 +20,16 @@ conan_cmake_run(
     REQUIRES opencv/4.3.0@conan/stable
     OPTIONS
     opencv:contrib=True
+    opencv:tiff=False
+    opencv:webp=False
+    opencv:png=False
+    opencv:openexr=False
+    opencv:dc1394=False
+    opencv:protobuf=False
     opencv:eigen=False
     opencv:glog=False
     opencv:gflags=False
+    opencv:quirc=False
     BASIC_SETUP CMAKE_TARGETS
     BUILD missing
 )
