@@ -1,14 +1,17 @@
 image:
-- Visual Studio 2019
+    - Visual Studio 2019
 
 cache:
-- '%USERPROFILE%\.conan\data -> CMakeLists.txt'
+    - '%USERPROFILE%\.conan\data -> CMakeLists.txt'
 
 install:
-- cmd: choco install conan
-- cmd: refreshenv
+    - cmd: choco install conan
+    - cmd: refreshenv
 
 build_script:
-- cmd: mkdir build && cd build
-- cmd: cmake -G "Visual Studio 16 2019" -A x64 ..
-- cmd: cmake --build . --config Release
+    - cmd: mkdir build && cd build
+    - cmd: cmake -G "Visual Studio 16 2019" -A x64 ..
+    - cmd: cmake --build . --config Release
+
+test_script:
+    - cmd: Release\emoji2image.exe
