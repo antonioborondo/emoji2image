@@ -3,6 +3,7 @@ image:
 
 cache:
     - '%USERPROFILE%\.conan\data -> CMakeLists.txt'
+    - C:\.conan -> CMakeLists.txt
 
 install:
     - cmd: choco install conan
