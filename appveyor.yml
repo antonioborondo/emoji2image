@@ -2,8 +2,8 @@ image:
     - Visual Studio 2019
 
 cache:
-    - '%USERPROFILE%\.conan\data -> CMakeLists.txt'
-    - C:\.conan -> CMakeLists.txt
+    - '%USERPROFILE%\.conan\data -> conanfile.txt'
+    - C:\.conan -> conanfile.txt
 
 install:
     - cmd: choco install conan

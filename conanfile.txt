@@ -1,0 +1,15 @@
+[requires]
+opencv/4.3.0@conan/stable
+
+[options]
+opencv:contrib=True
+opencv:dc1394=False
+opencv:eigen=False
+opencv:gflags=False
+opencv:glog=False
+opencv:openexr=False
+opencv:png=False
+opencv:protobuf=False
+opencv:quirc=False
+opencv:tiff=False
+opencv:webp=False
