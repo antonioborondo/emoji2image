@@ -17,12 +17,7 @@ conan_add_remote(
 )
 
 conan_cmake_run(
-    REQUIRES opencv/4.3.0@conan/stable
-    OPTIONS
-    opencv:contrib=True
-    opencv:eigen=False
-    opencv:glog=False
-    opencv:gflags=False
+    CONANFILE conanfile.txt
     BASIC_SETUP CMAKE_TARGETS
     BUILD missing
 )
