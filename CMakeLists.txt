@@ -23,10 +23,13 @@ conan_cmake_run(
 )
 
 add_executable(emoji2image
-    main.cpp
+    src/main.cpp
 )
 
 target_link_libraries(emoji2image
     PRIVATE
+    emojicpp
     CONAN_PKG::opencv
 )
+
+add_subdirectory(libs)

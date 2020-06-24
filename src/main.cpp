@@ -1,7 +1,6 @@
+#include <emojicpp/emoji.h>
 #include <opencv2/opencv.hpp>
 #include <opencv2/freetype.hpp>
-
-#include "emoji.h"
 
 int main()
 {
